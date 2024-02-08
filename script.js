@@ -1,10 +1,11 @@
-let container = document.getElementById('container')
+const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
 
-toggle = () => {
-    container.classList.toggle('sign-in')
-    container.classList.toggle('sign-up')
-}
+const container = document.querySelector(".container");
 
-setTimeout(() => {
-    container.classList.add('sign-in')
-}, 200)
+sign_up_btn.addEventListener("click",()=>{
+    container.classList.add("sign-up-mode");
+})
+sign_in_btn.addEventListener("click",()=>{
+    container.classList.remove("sign-up-mode");
+})
