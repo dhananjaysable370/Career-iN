@@ -203,11 +203,15 @@ form.sign-in-form {
     padding: 3rem 17% 2rem 12%;
 }
 
+
+
 .right-panel {
     pointer-events: none;
     padding: 3rem 12% 2rem 17%;
-        margin-top: -55px;
+    margin-top: -55px;
 }
+
+
 
 .panel .content {
     margin-top: 35px;
@@ -236,6 +240,20 @@ form.sign-in-form {
     height: 41px;
     font-weight: 600;
     font-size: 0.8rem;
+}
+
+#logopngleft {
+    height: 50px;
+    position: absolute;
+    left: 14.5%;
+    top: 0px;
+    cursor: pointer;
+}
+
+#logopngright {
+    height: 50px;
+    position: relative;
+    right: 28%;
 }
 
 .right-panel .image,
@@ -322,6 +340,8 @@ form.sign-in-form {
         grid-row: 1 / 2;
     }
 
+
+
     .image {
         width: 200px;
         transition: transform 0.9s ease-in-out;
@@ -335,7 +355,8 @@ form.sign-in-form {
     }
 
     .panel h3 {
-        font-size: 1.2rem;
+        font-size: 13px;
+        margin-top: 33px;
     }
 
     .panel p {
@@ -397,7 +418,14 @@ form.sign-in-form {
     }
 
     .panel .content {
-        padding: 0.5rem 1rem;
+        height: 210px;
+        width: 170px;
+        text-align: center;
+        padding: revert-layer;
+    }
+
+    .panel .left-panel .signupimg {
+        left: 25%;
     }
 
     .container {
@@ -405,12 +433,23 @@ form.sign-in-form {
     }
 
     .container:before {
-        bottom: 72%;
+        bottom: 62%;
         left: 50%;
     }
 
+    #logopngleft {
+        left: 25%;
+    }
+
+    #logopngright {
+        height: 50px;
+        position: relative;
+        right: 8%;
+        top: 10%;
+    }
+
     .container.sign-up-mode:before {
-        bottom: 28%;
+        bottom: 32%;
         left: 50%;
     }
 }
